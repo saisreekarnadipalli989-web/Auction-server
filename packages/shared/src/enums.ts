@@ -1,0 +1,65 @@
+export enum UserRole {
+  BUYER = 'BUYER',
+  SELLER = 'SELLER',
+  ADMIN = 'ADMIN',
+}
+
+export enum ListingCategory {
+  TEXTBOOKS = 'TEXTBOOKS',
+  ELECTRONICS = 'ELECTRONICS',
+  LAB_EQUIPMENT = 'LAB_EQUIPMENT',
+  CALCULATORS = 'CALCULATORS',
+  FURNITURE = 'FURNITURE',
+  OTHER = 'OTHER',
+}
+
+export enum ListingCondition {
+  BRAND_NEW = 'BRAND_NEW',
+  LIKE_NEW = 'LIKE_NEW',
+  GOOD = 'GOOD',
+  FAIR = 'FAIR',
+}
+
+export enum ListingStatus {
+  DRAFT = 'DRAFT',
+  PUBLISHED = 'PUBLISHED',
+  ARCHIVED = 'ARCHIVED',
+}
+
+export enum AuctionStatus {
+  DRAFT = 'DRAFT',
+  SCHEDULED = 'SCHEDULED',
+  ACTIVE = 'ACTIVE',
+  CLOSED_WITH_WINNER = 'CLOSED_WITH_WINNER',
+  CLOSED_WITHOUT_BIDS = 'CLOSED_WITHOUT_BIDS',
+  CANCELLED = 'CANCELLED',
+  SUSPENDED = 'SUSPENDED',
+}
+
+export enum BidStatus {
+  ACCEPTED = 'ACCEPTED',
+  REJECTED = 'REJECTED',
+  RETRACTED = 'RETRACTED',
+}
+
+export enum NotificationType {
+  OUTBID = 'OUTBID',
+  AUCTION_WON = 'AUCTION_WON',
+  AUCTION_CLOSED = 'AUCTION_CLOSED',
+  AUCTION_EXTENDED = 'AUCTION_EXTENDED',
+  LISTING_MODERATED = 'LISTING_MODERATED',
+}
+
+export enum ReportReason {
+  SPAM = 'SPAM',
+  INAPPROPRIATE = 'INAPPROPRIATE',
+  MISLEADING = 'MISLEADING',
+  COUNTERFEIT = 'COUNTERFEIT',
+  OTHER = 'OTHER',
+}
+
+export enum ReportStatus {
+  PENDING = 'PENDING',
+  RESOLVED = 'RESOLVED',
+  DISMISSED = 'DISMISSED',
+}

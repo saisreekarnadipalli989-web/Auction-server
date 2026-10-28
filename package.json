@@ -1,0 +1,36 @@
+{
+  "name": "bidflow",
+  "version": "1.0.0",
+  "description": "BidFlow — Real-Time Auction Marketplace with Concurrency-Safe Bidding",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "npm run dev --workspaces",
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "test": "npm run test --workspaces",
+    "test:concurrency": "npm run test:concurrency --workspace=apps/api",
+    "prisma:generate": "npm run prisma:generate --workspace=apps/api",
+    "prisma:migrate": "npm run prisma:migrate --workspace=apps/api",
+    "prisma:seed": "npm run prisma:seed --workspace=apps/api",
+    "prisma:studio": "npm run prisma:studio --workspace=apps/api",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "keywords": [
+    "auction",
+    "real-time",
+    "concurrency",
+    "nestjs",
+    "react",
+    "postgresql",
+    "socket.io",
+    "prisma"
+  ],
+  "author": "BidFlow Engineering Team",
+  "license": "MIT"
+}
